@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/fondo">
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="SLIDING PUZZLE"
+            android:textSize="50dp"
+            android:background="@drawable/titulo"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Nombre:"
+                android:textSize="25dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/etnombre"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Nombre Jugador"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:background="@drawable/input"/>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Elegir Rompecabezas"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivmodo1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/piezas_detalle"
+                android:src="@drawable/patron1" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/ivmodo2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/piezas_detalle"
+                android:src="@drawable/patron2" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/ivmodo3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/piezas_detalle"
+                android:src="@drawable/patron3" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivmodo4x4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/piezas_detalle"
+            android:src="@drawable/patron4x4" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
